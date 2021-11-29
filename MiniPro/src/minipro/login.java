@@ -6,7 +6,7 @@ package minipro;
 import javax.swing.JOptionPane;
 import java.awt.Toolkit;
 import java.awt.event.WindowEvent;
-import minipro.Home;
+import minipro.MedInfo;
 
 /**
  *
@@ -165,8 +165,11 @@ public class login extends javax.swing.JFrame {
             username.setText(null);
             password.setText(null);
             systemExit();
-            Home Info = new Home();
+            Menu Info;
+            Info = new Menu();
             Info.setVisible(true);
+            setVisible(false); //you can't see me!
+            dispose();
             
         }
         else{
